@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Madhusudan's Porfolio</title>
+    <title>Madhusudan Maity</title>
 
     <link rel="stylesheet" href="style.css" />
 
@@ -32,7 +32,7 @@
 
         <a href="#services">Services</a>
 
-        <a href="#testimonials">Testimonials</a>
+        <a href="game.html">Game</a>
 
         <a href="#contact">Contact</a>
       </nav>
@@ -40,8 +40,10 @@
 
     <section class="home" id="home">
       <div class="home-content">
-        <h1>Hi,I'm <span>Madhusudan</span></h1>
-        <h3 class="text-animation">I'm a <span></span></h3>
+        <h1>Hi,My name is <span>Madhusudan Maity.</span></h1>
+        <h3 class="text-animation">
+          I'm a passionate  <span id="element"></span>
+        </h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Nostrum,consequatur consequuntur eaque ipsa molestiae esse laborum
@@ -67,5 +69,12 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['MERN STACK Developer', 'Backend Developer'],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
