@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking of nav and content */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    position: fixed; /* Make navbar fixed */
+    top: 0; /* Stick to the top */
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #08cfe6;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 5rem; /* Add space below navbar */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #666;
+}
+
+input[type="number"] {
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include this line */
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Game Area Styling */
+.game-area {
+    margin-top: 1rem;
+    display: none;
+}
+
+#feedback {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #e74c3c;
+}
+
+#attempts {
+    font-weight: bold;
+    color: #2ecc71;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 1rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+        margin-top: 3rem;
+    }
+}
