@@ -33,9 +33,10 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 8vh;
   background: radial-gradient(circle, rgba(238,174,202,1) 38%, rgba(148,187,233,1) 94%);
-
+  border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
 }
 
 .nav-links {
@@ -73,14 +74,18 @@ a:hover {
   position: relative;
   display: inline-block;
 }
+.hamburger-icon.open{
+  display: block;
+}
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: 24px;
   width: 30px;
   cursor: pointer;
+  
 }
 
 .hamburger-icon span {
@@ -117,6 +122,8 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  border-radius: 1rem;
+
 }
 
 .hamburger-icon.open span:first-child {
@@ -148,7 +155,7 @@ a:hover {
 section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 2rem;
   box-sizing: border-box;
   min-height: fit-content;
   background-color:#D9AFD9;
@@ -465,7 +472,8 @@ footer {
   margin: 0 1rem;
   position: relative;
   margin-top: 2rem;
-  border-radius: 1rem;
+  border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
   background-color: #D9AFD9;
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   padding: 1rem;
@@ -481,7 +489,7 @@ footer nav {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
   }
   

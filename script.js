@@ -30,4 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
   menuLinks.forEach(link => {
       link.addEventListener('click', toggleMenu);
   });
+
+  // Close menu on scroll
+  window.addEventListener('scroll', () => {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    if (menu.classList.contains("open")) {
+      menu.classList.remove("open");
+      icon.classList.remove("open");
+      icon.setAttribute("aria-expanded", false);
+    }
+  });
 });
