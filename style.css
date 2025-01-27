@@ -35,7 +35,7 @@ nav {
   align-items: center;
   height: 8vh;
   background: radial-gradient(circle, rgba(238,174,202,1) 38%, rgba(148,187,233,1) 94%);
-  border-radius:1rem;
+  border-radius: 1rem;
 }
 
 .nav-links {
